@@ -18,13 +18,12 @@ To search for pathways, you can
 	
 2) add your own biochemical network, including weighted reactant-product pairs, and set the parameters according to your search criteria in ./input/INPUT-NAME
 
-#Input:
+**Input:**
 1) Reaction network, in the format of a BNICE.ch systemFile.txt (in ROOT/PROJECT/COMPOUND/)
 2) Starting compounds for pathway search : source_compounds.txt
 3) Parameter settings: parameters.txt
 
-#Output: 
-in ./data/
+**Output:** in ./data/
 
 Structure: ROOT/PROJECT/COMPOUND
 

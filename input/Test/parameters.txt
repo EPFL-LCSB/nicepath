@@ -1,0 +1,81 @@
+##############
+# Parameters #
+##############
+
+#------------------------
+# Define input style
+#------------------------
+
+# OPTION 1 : Define a project structure ...
+ROOT|../data/
+PROJECTNAME|Retrobio
+COMPOUND|3HP
+
+# OPTION 2: ... or separately define input file and output folder
+input_file_path|../../nicepath/data/Retrobio/3HP/systemFile_3HP.txt
+output_folder_path|../../nicepath/output/Retrobio/3HP/
+
+# Choose input option
+input_structure|2
+
+#------------------------
+# Define input
+#------------------------
+
+folder_name|
+use_KEGG_linking_file|False
+existing_dictionaries|False
+is_test|False
+
+#------------------------
+# Define compounds
+#------------------------
+
+target_compounds|53
+# List of precursor compounds: can be an entry number, a list of entry numbers as a .txt file, or 'model' to search against all model compounds
+precursor_compounds|source_compounds.txt
+# Default model: E. coli
+bigg_model|iJO1366
+
+#------------------------
+# Define output
+#------------------------
+
+number_of_pathways|100
+header_list|pathwayIndex,pathwayIndex_RawDATA,Source,Target,Pathway_Length,NumNovelIntermediates,Intermediates,Reaction_KEGGID,Number_of_known_steps_(reactions),Reaction_Entries,Reaction_Operators,Pathway_score,Average_CAR,Partial_reactions,Co_reactants
+max_reaction_alternatives|6
+max_num_steps|5
+
+
+#------------------------
+# Define filtering
+#------------------------
+only_consider_eligible|False
+limit_pathways_length_to_generation|False
+ignore_infeasible_thermo|False
+ignore_infeasible_mechanism|False
+ignore_novel_reactions|False
+exclude_pattern|
+stop_if_precursor_hit|False
+ignore_non_model_coreactants|False
+# maximum difference betweeen the pathway score and its length
+max_diff_score_length|1000
+
+#------------------------
+# Algorithm settings
+#------------------------
+use_parallel|False
+find_branched_pathways|False
+
+# can be none (1/CAR), 'sqrt' or 'exp'
+transformation_operator|
+min_conserved_ratio|0
+
+#------------------------
+# Extra features
+#------------------------
+print_compound_sequence|False
+print_network_statistics|False
+ignore_CoA|True
+print_bridgIT_system|False
+search_reverse|False

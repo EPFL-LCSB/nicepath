@@ -12,7 +12,7 @@ PROJECTNAME|Retrobio
 COMPOUND|3HP
 
 # OPTION 2: ... or separately define input file and output folder
-input_file_path|../../nicepath/data/LinkingFile/KEGG/KEGG_2018.txt
+input_file_path|../../nicepath/data/Databases/KEGG/KEGG_2018.txt
 output_folder_path|../../nicepath/output/KEGG/
 
 # Choose input option
@@ -23,7 +23,7 @@ input_structure|2
 #------------------------
 
 folder_name|
-use_KEGG_linking_file|False
+use_KEGG_linking_file|True
 existing_dictionaries|False
 is_test|False
 
@@ -68,7 +68,7 @@ use_parallel|False
 find_branched_pathways|False
 
 # can be none (1/CAR), 'sqrt' or 'exp'
-transformation_operator|
+transformation_operator|exp
 min_conserved_ratio|0
 
 #------------------------

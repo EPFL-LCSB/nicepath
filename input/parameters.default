@@ -13,7 +13,7 @@ COMPOUND|3HP
 
 # OPTION 2: ... or separately define input file and output folder
 input_file_path|../../nicepath/data/Retrobio/3HP/systemFile_3HP.txt
-output_folder_path|../../nicepath/output/
+output_folder_path|../../nicepath/output/Retrobio/
 
 # Choose input option
 input_structure|2

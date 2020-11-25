@@ -377,6 +377,8 @@ class Data:
 						target_file = open(self.root_folder + 'input/' + self.project_name + '/' + param_dict[param])
 						for target in target_file.readlines():
 							self.parameters.target_compounds.append(target.rstrip())
+				elif param_dict[param].isdigit() or (param_dict[param][0]=="C" and param_dict[param][1:].isdigit()): # load only one target, indicated in the parameter file
+					self.parameters.target_compounds.append(param_dict[param])
 				else : # load only one target, indicated in the parameter file
 					assert int(param_dict[param]), "PARAMETER ERROR:" +  param_dict[param] + "is not a number"
 					self.parameters.target_compounds.append(param_dict[param])

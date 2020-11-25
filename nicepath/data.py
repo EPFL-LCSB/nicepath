@@ -43,7 +43,7 @@ class Data:
 		self.current_precursor = 0
 
 		# bigg database
-		self.bigg_db_file = self.root_folder + 'data/Database/BiGG_metabolites.txt'
+		self.bigg_db_file = self.root_folder + 'data/Models/BiGG_metabolites.txt'
 
 	def go(self):
 		pool = multiprocessing.Pool()

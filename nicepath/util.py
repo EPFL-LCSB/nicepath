@@ -29,9 +29,9 @@ def k_shortest_paths(Graph, source, target, k, weight):
 
 
 def getBoolean(_string):
-    if _string in ['False', 'false', '0']:
+    if _string in ['False', 'false', '0', 'FALSE']:
         return False
-    elif _string in ['True', 'true', '1']:
+    elif _string in ['True', 'true', '1', 'TRUE']:
         return True
     else:
         raise ValueError('ERROR: Invalid value', _string, 'for conversion to boolean.')

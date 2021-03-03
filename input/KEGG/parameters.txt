@@ -31,9 +31,9 @@ is_test|False
 # Define compounds
 #------------------------
 
-target_compounds|C01533
+target_compounds|C00106
 # List of precursor compounds: can be an entry number, a list of entry numbers as a .txt file, or 'model' to search against all model compounds
-precursor_compounds|C00082
+precursor_compounds|C00750
 # Default model: E. coli
 bigg_model|iJO1366
 
@@ -41,7 +41,7 @@ bigg_model|iJO1366
 # Define output
 #------------------------
 
-number_of_pathways|10
+number_of_pathways|100
 header_list|pathwayIndex,pathwayIndex_RawDATA,Source,Target,Pathway_Length,NumNovelIntermediates,Intermediates,Reaction_KEGGID,Number_of_known_steps_(reactions),Reaction_Entries,Reaction_Operators,Pathway_score,Average_CAR,Partial_reactions,Co_reactants
 max_reaction_alternatives|1
 max_num_steps|100
@@ -68,7 +68,7 @@ use_parallel|False
 find_branched_pathways|False
 
 # can be none (1/CAR), 'sqrt' or 'exp'
-transformation_operator|exp
+transformation_operator|
 min_conserved_ratio|0
 
 #------------------------
